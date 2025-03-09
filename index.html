@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-section">
+            <select id="gameMode">
+                <option value="bigsmall">BIG/SMALL</option>
+                <option value="evenodd">EVEN/ODD</option>
+            </select>
+            <div class="info-box">
+                <p>📅 Period: <span id="currentPeriod">0</span></p>
+                <p>⏳ Time Left: <span id="timer">60</span></p>
+                <p>🏆 Result: <span id="result">Waiting...</span></p>
+                <p>🔘 Prediction: <span id="prediction">None</span></p>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <h2>Analysis Dashboard</h2>
+            <div class="stats">
+                <p>✅ Wins: <span id="totalWins">0</span></p>
+                <p>❌ Losses: <span id="totalLosses">0</span></p>
+                <p>📊 Accuracy: <span id="accuracy">0%</span></p>
+            </div>
+        </div>
+
+        <div class="history">
+            <h2>Prediction History</h2>
+            <div id="historyList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+              </html>
